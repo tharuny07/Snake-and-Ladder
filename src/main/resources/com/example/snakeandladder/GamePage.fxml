@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.GamePageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="0.0" layoutY="10.0" opacity="0.97" prefHeight="50.0" prefWidth="250.0" text="1.Click on the play button to start." textFill="#145b25">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="0.0" layoutY="40.0" opacity="0.97" prefHeight="50.0" prefWidth="250.0" text="2.First player to reach 100 will WIN." textFill="#145b25">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="0.0" layoutY="70.0" opacity="0.97" prefHeight="50.0" prefWidth="250.0" text="3.It is a played B/W two Players." textFill="#145b25">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="0.0" layoutY="100.0" opacity="0.97" prefHeight="50.0" prefWidth="250.0" text="4.Getting 6 three times in a row will" textFill="#145b25">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="0.0" layoutY="120.0" opacity="0.97" prefHeight="50.0" prefWidth="250.0" text="make you to start from 1." textFill="#145b25">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="0.0" layoutY="150.0" opacity="0.97" prefHeight="50.0" prefWidth="250.0" text="5.Enjoy OUR Snakes and Ladders." textFill="#145b25">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitWidth="180" fitHeight="200" layoutX="290" layoutY="300" onMouseClicked="#start">
+            <image>
+                <Image url="@playbutton1.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitWidth="250" fitHeight="250" layoutX="270" layoutY="20">
+            <image>
+                <Image url="@snake ladder title.jpg"/>
+            </image>
+        </ImageView>
+    </children>
+
+</AnchorPane>

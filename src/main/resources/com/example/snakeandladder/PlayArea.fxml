@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.PlayAreaController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+    <ImageView fitWidth="500" fitHeight="500" layoutX="300">
+        <image>
+            <Image url="@snakeladderboard.jpg"/>
+        </image>
+    </ImageView>
+        <ImageView fx:id="player1" fitWidth="20" fitHeight="50" layoutX="250" layoutY="450">
+            <image>
+                <Image url="@redplayer.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="player2" fitWidth="20" fitHeight="50" layoutX="270" layoutY="450">
+            <image>
+                <Image url="@blueplayer.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitWidth="50" fitHeight="50" layoutX="100" layoutY="100" onMouseClicked="#roll">
+            <image>
+                <Image url="@dice.jpg"/>
+            </image>
+        </ImageView>
+
+        <Label fx:id="number" layoutX="100.0" layoutY="170.0" opacity="0.97" prefHeight="50.0" prefWidth="250.0" text="Roll Dice" textFill="#145b25">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+        <Label fx:id="changeturn" layoutX="50.0" layoutY="50.0" opacity="0.97" prefHeight="50.0" prefWidth="200.0" text="Player 1 turn" textFill="#145b25">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>
